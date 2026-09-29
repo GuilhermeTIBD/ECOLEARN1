@@ -1,0 +1,88 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="EcoLearn — plataforma educacional interativa sobre sustentabilidade"><title>EcoLearn | Sustentabilidade que vira ação</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="progress"></div>
+<header><a class="brand" href="#home"><span class="logo">E</span>Eco<span>Learn</span></a><nav><a href="#aprender">Aprender</a><a href="#ecobot">EcoBot</a><a href="#jogos">Jogos</a><a href="#impactos">Impactos</a><a href="#desafios">Desafios</a><a href="#esg">ESG</a><a href="#empresa">Empresa Sustentável</a><a href="#dados">Fontes</a></nav><div class="head-actions"><div class="points">🌱 <b id="topScore">0</b> pts</div><button id="theme" aria-label="Alternar tema">☾</button><button id="menu" aria-label="Abrir menu">☰</button></div></header>
+<main>
+<section id="home" class="hero"><div class="hero-copy"><span class="tag">🌱 EDUCAÇÃO AMBIENTAL INTERATIVA</span><h1>Aprenda hoje.<br><em>Transforme amanhã.</em></h1><p>Uma plataforma feita para estudantes aprenderem sustentabilidade com dados, jogos, desafios e respostas rápidas — tudo de um jeito simples e visual.</p><div class="actions"><a class="btn" href="#jogos">Começar missão <span>→</span></a><a class="ghost" href="#aprender">Explorar conteúdos</a></div><div class="mini-proof"><span>✓ Conteúdo educativo</span><span>✓ Fontes oficiais</span><span>✓ Aprendizado gamificado</span></div></div><div class="hero-visual"><div class="orbit o1">♻️</div><div class="orbit o2">💧</div><div class="orbit o3">🌱</div><div class="planet">🌎</div><div class="float-card fc1"><b>+10 EcoPontos</b><small>Boa escolha!</small></div><div class="float-card fc2"><span>⚡</span><div><b>Missão do dia</b><small>Economize energia</small></div></div></div></section>
+<section class="stats"><article><span class="stat-icon">🗑️</span><div><b>81 mi t</b><span>resíduos urbanos/ano no Brasil*</span></div></article><article><span class="stat-icon">♻️</span><div><b>8,7%</b><span>reciclados*</span></div></article><article><span class="stat-icon">⚠️</span><div><b>34%</b><span>destinação inadequada*</span></div></article><article><span class="stat-icon">🌍</span><div><b>3,8 bi t</b><span>projeção global para 2050**</span></div></article></section>
+<section id="aprender"><div class="head"><span>CONHECIMENTO</span><h2>Escolha um tema. <em>Descubra o impacto.</em></h2><p>Conteúdos rápidos para entender o problema, suas consequências e o que você pode fazer.</p></div><div id="topics" class="grid"></div><div id="topicDetail" class="topic-detail"><button class="close">×</button><div id="topicContent"></div></div></section>
+<section id="ecobot" class="bot"><div class="bot-copy"><span class="tag light">✦ ECOBOT</span><h2>Uma dúvida ambiental?<br><em>Pergunte.</em></h2><p>O EcoBot responde dúvidas sobre reciclagem, água, energia, resíduos e hábitos sustentáveis usando uma base educativa local.</p><div class="suggest"><button>🔋 Onde descarto pilhas?</button><button>🛢️ Óleo pode ir na pia?</button><button>♻️ O que é coleta seletiva?</button><button>💧 Como economizar água?</button></div><div class="bot-note">● Base educativa demonstrativa • Fontes indicadas nas respostas</div></div><div class="chat"><div class="chat-head"><div class="avatar">🌱</div><div><b>EcoBot</b><small><i></i> Online</small></div><span>Assistente ambiental</span></div><div id="messages"><div class="msg ai">Olá! 🌱 Sou o EcoBot. Pergunte alguma coisa sobre sustentabilidade.</div></div><div id="typing" class="typing">EcoBot está digitando <i>•••</i></div><form id="chatForm"><input id="question" placeholder="Digite sua dúvida..." autocomplete="off"><button aria-label="Enviar">➤</button></form></div></section>
+<section id="jogos"><div class="head"><span>APRENDA JOGANDO</span><h2>Missão: <em>descarte correto</em></h2><p>Escolha a lixeira certa, ganhe EcoPontos e aprenda com cada resposta.</p></div><div class="game"><div class="game-top"><div><span>DESAFIO <b id="round">1</b>/6</span><div class="game-progress"><i id="gameBar"></i></div></div><div class="score">🌱 EcoPontos <b id="score">0</b></div></div><div id="item" class="waste"></div><div id="bins" class="bins"></div><div id="feedback" class="feedback">Escolha uma opção para continuar.</div><button class="next" id="next" disabled>Próximo desafio →</button></div></section>
+<section id="impactos" class="impact-section"><div class="head"><span>CONSEQUÊNCIAS REAIS</span><h2>Uma escolha errada <em>não termina na lixeira.</em></h2><p>Veja como o descarte incorreto pode gerar uma cadeia de impactos.</p></div><div class="flow"><div><b>1</b><span>🧴</span><strong>Descarte incorreto</strong><small>Resíduo na rua</small></div><i>→</i><div><b>2</b><span>🌧️</span><strong>Chuva</strong><small>Material é carregado</small></div><i>→</i><div><b>3</b><span>🕳️</span><strong>Bueiros</strong><small>Obstrução e transporte</small></div><i>→</i><div><b>4</b><span>🌊</span><strong>Rios e oceanos</strong><small>Poluição ambiental</small></div></div><div class="impact-grid"><article><span>🧴</span><div><small>RESÍDUOS</small><h3>Plástico</h3><p>Pode chegar a rios e ambientes costeiros quando descartado incorretamente.</p></div></article><article><span>🔋</span><div><small>LOGÍSTICA REVERSA</small><h3>Pilhas e baterias</h3><p>Precisam de destinação específica. Não devem ser descartadas no lixo comum.</p></div></article><article><span>🛢️</span><div><small>ÁGUA</small><h3>Óleo de cozinha</h3><p>Deve ser armazenado e encaminhado para coleta, nunca despejado na pia.</p></div></article></div></section>
+<section id="desafios"><div class="challenge-wrap"><div><span class="tag">DESAFIO DA SEMANA</span><h2>Conhecimento vira <em>ação.</em></h2><p>Complete pequenas atitudes sustentáveis e acompanhe seu progresso nesta demonstração.</p><div class="challenge-progress"><div><span>Seu progresso</span><b id="challengeText">0/4 concluídos</b></div><div><i id="challengeBar"></i></div></div></div><div id="challengeList" class="challenge-list"></div></div></section>
+
+<section id="esg" class="esg-section">
+  <div class="head">
+    <span>ESG NAS EMPRESAS</span>
+    <h2>Sustentabilidade também faz parte dos <em>negócios.</em></h2>
+    <p>ESG reúne práticas ambientais, sociais e de governança que ajudam empresas a crescer com mais responsabilidade.</p>
+  </div>
+  <div class="esg-grid">
+    <article class="esg-card">
+      <div class="esg-icon">🌱</div><small>ENVIRONMENTAL</small><h3>Ambiental</h3>
+      <p>Cuida da relação da empresa com o meio ambiente e do uso consciente dos recursos naturais.</p>
+      <div class="esg-example"><b>Como fazer?</b><span>💧 Economizar água</span><span>⚡ Reduzir energia</span><span>♻️ Reciclar e reduzir resíduos</span></div>
+    </article>
+    <article class="esg-card">
+      <div class="esg-icon">👥</div><small>SOCIAL</small><h3>Social</h3>
+      <p>Considera como a empresa se relaciona com funcionários, clientes e com a comunidade.</p>
+      <div class="esg-example"><b>Como fazer?</b><span>🤝 Respeitar funcionários</span><span>🌍 Promover inclusão</span><span>🦺 Investir em segurança e comunidade</span></div>
+    </article>
+    <article class="esg-card">
+      <div class="esg-icon">🏢</div><small>GOVERNANCE</small><h3>Governança</h3>
+      <p>Mostra como a empresa é administrada, toma decisões e presta contas sobre suas ações.</p>
+      <div class="esg-example"><b>Como fazer?</b><span>⚖️ Agir com ética</span><span>🔎 Ser transparente</span><span>📋 Ter organização e responsabilidade</span></div>
+    </article>
+  </div>
+  <div class="esg-callout"><span>💡</span><div><b>ESG na prática</b><p>Uma empresa pode gerar lucro e, ao mesmo tempo, reduzir impactos ambientais, valorizar pessoas e manter uma gestão responsável.</p></div></div>
+</section>
+
+<section id="empresa" class="company-section">
+  <div class="head">
+    <span>🚀 DESAFIO EMPREENDEDOR</span>
+    <h2>Crie uma <em>Empresa Sustentável</em></h2>
+    <p>Escolha um negócio e tome decisões estratégicas. No final, descubra o impacto ambiental, social e de governança da sua empresa.</p>
+  </div>
+
+  <div class="company-game">
+    <div class="company-game-top">
+      <div><small>ETAPA <b id="companyStep">1</b> DE 7</small><div class="company-progress"><i id="companyBar"></i></div></div>
+      <span id="companyStageName">Escolha seu negócio</span>
+    </div>
+    <div id="companyBuilder"></div>
+  </div>
+
+  <div id="esgResult" class="esg-result">
+    <div class="result-head"><div><span>📊 INDICADOR ESG</span><h3>Resultado da sua empresa</h3></div><div id="companyBadge" class="company-badge">🌱</div></div>
+    <div class="indicator-grid">
+      <article><div><span>🌱 Ambiental</span><b id="envScore">0%</b></div><div class="meter"><i id="envBar"></i></div><small id="envText"></small></article>
+      <article><div><span>👥 Social</span><b id="socScore">0%</b></div><div class="meter"><i id="socBar"></i></div><small id="socText"></small></article>
+      <article><div><span>🏢 Governança</span><b id="govScore">0%</b></div><div class="meter"><i id="govBar"></i></div><small id="govText"></small></article>
+    </div>
+    <div class="result-total"><span>Índice ESG geral</span><strong id="totalESG">0%</strong></div>
+    <p class="result-message">“Uma empresa sustentável busca equilibrar resultados econômicos com responsabilidade ambiental, social e uma boa gestão.”</p>
+    <div id="companyAnalysis" class="company-analysis"></div>
+    <button id="restartCompany" class="ghost company-restart">Criar outra empresa ↻</button>
+  </div>
+</section>
+
+<section id="empreendedorismo" class="entrepreneur-section">
+  <div class="head">
+    <span>💰 ESG + EMPREENDEDORISMO</span>
+    <h2>Problemas também podem virar <em>oportunidades.</em></h2>
+    <p>Empreender de forma sustentável é identificar uma necessidade, criar valor e buscar impacto positivo ao mesmo tempo.</p>
+  </div>
+  <div class="business-flow">
+    <article><span>1</span><i>🧴</i><small>PROBLEMA</small><h3>Muito plástico descartado</h3><p>Um problema ambiental cria uma necessidade de solução.</p></article>
+    <b>→</b>
+    <article><span>2</span><i>💡</i><small>IDEIA</small><h3>Reaproveitar o material</h3><p>Transformar plástico recuperado em novos produtos.</p></article>
+    <b>→</b>
+    <article><span>3</span><i>🏭</i><small>NEGÓCIO</small><h3>Vender produtos reciclados</h3><p>A solução se transforma em produto, serviço e fonte de renda.</p></article>
+    <b>→</b>
+    <article><span>4</span><i>🌎</i><small>IMPACTO</small><h3>Valor para todos</h3><p>Menos resíduos, geração de renda e atendimento de uma necessidade.</p></article>
+  </div>
+  <div class="opportunity-box"><div>♻️ <b>Problema ambiental</b></div><span>+</span><div>💡 <b>Inovação</b></div><span>+</span><div>📈 <b>Modelo de negócio</b></div><span>=</span><div>🌱 <b>Empreendedorismo sustentável</b></div></div>
+</section>
+
+<section id="dados" class="sources"><div><span class="tag light">DADOS E FONTES</span><h2>Informação boa<br>tem <em>origem.</em></h2><p>O EcoLearn prioriza órgãos públicos e organizações ambientais reconhecidas. Os links abaixo levam aos materiais oficiais.</p></div><div class="source-list"><a target="_blank" rel="noopener" href="https://www.gov.br/mma/"><span>🇧🇷</span><div><b>Ministério do Meio Ambiente</b><small>Políticas e informações ambientais</small></div><i>↗</i></a><a target="_blank" rel="noopener" href="https://sinir.gov.br/"><span>♻️</span><div><b>SINIR</b><small>Gestão de resíduos sólidos</small></div><i>↗</i></a><a target="_blank" rel="noopener" href="https://www.unep.org/resources/global-waste-management-outlook-2024"><span>🌍</span><div><b>UNEP</b><small>Global Waste Management Outlook 2024</small></div><i>↗</i></a><a target="_blank" rel="noopener" href="https://www.abrema.org.br/"><span>📊</span><div><b>ABREMA</b><small>Panorama de resíduos sólidos</small></div><i>↗</i></a></div></section>
+</main><footer><div><a class="brand foot" href="#home"><span class="logo">E</span>Eco<span>Learn</span></a><p>Educação para transformar escolhas em impacto positivo.</p></div><div><b>Explore</b><a href="#aprender">Aprender</a><a href="#ecobot">EcoBot</a><a href="#jogos">Jogos</a></div><div><b>Projeto</b><a href="#impactos">Impactos</a><a href="#desafios">Desafios</a><a href="#esg">ESG</a><a href="#empresa">Empresa Sustentável</a><a href="#dados">Fontes</a></div><small>* Indicadores demonstrativos baseados nas publicações citadas no projeto. ** UNEP, Global Waste Management Outlook 2024.<br>EcoLearn • Projeto educacional demonstrativo</small></footer>
+<div id="toast" class="toast">+10 EcoPontos 🌱</div><script src="script.js"></script></body></html>
